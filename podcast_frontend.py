@@ -42,11 +42,7 @@ def main():
 
         with col3:
             st.subheader("Country on Spotlight")
-            st.write(podcast_info['podcast_guest']['name'])
-
-        with col4:
-            st.subheader("Country Details")
-            st.write(podcast_info["podcast_guest"]['summary'])
+            st.write(podcast_info['podcast_guest'][:1000])
 
         # Display the five key moments
         st.subheader("News From")
@@ -90,11 +86,7 @@ def main():
 
         with col3:
             st.subheader("Country on Spotlight")
-            st.write(podcast_info['podcast_guest']['name'])
-
-        with col4:
-            st.subheader("Country Details")
-            st.write(podcast_info["podcast_guest"]['summary'])
+            st.write(podcast_info['podcast_guest'][:1000])
 
         # Display the five key moments
         st.subheader("News From")
