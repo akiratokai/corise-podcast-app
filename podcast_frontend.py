@@ -38,11 +38,11 @@ def main():
             st.image(podcast_info['podcast_details']['episode_image'], caption="Podcast Cover", width=300, use_column_width=True)
 
         # Display the podcast guest and their details in a side-by-side layout
-        col3, col4 = st.columns([3, 7])
+        col3, col4 = st.columns([7, 3])
 
         with col3:
             st.subheader("Country on Spotlight")
-            st.write(podcast_info['podcast_guest'][:1000])
+            st.write(podcast_info['podcast_guest'][:100] + "...")
 
         # Display the five key moments
         st.subheader("News From")
@@ -82,11 +82,11 @@ def main():
             st.image(podcast_info['podcast_details']['episode_image'], caption="Podcast Cover", width=300, use_column_width=True)
 
         # Display the podcast guest and their details in a side-by-side layout
-        col3, col4 = st.columns([3, 7])
+        col3, col4 = st.columns([7, 3])
 
         with col3:
             st.subheader("Country on Spotlight")
-            st.write(podcast_info['podcast_guest'][:1000])
+            st.write(podcast_info['podcast_guest'][:100] + "...")
 
         # Display the five key moments
         st.subheader("News From")
